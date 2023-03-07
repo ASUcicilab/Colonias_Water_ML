@@ -34,4 +34,9 @@ You can reproduce our workflow by following steps below.
 4. Attach labels with original `csv` files (`colonias_N_norm.csv`, `colonias_Y_norm.csv`) into new `csv` files (`colonias_N_norm_labeled`, `colonias_Y_norm_labeled`). *(You also can update label information on the same csv files)*
 5. `decision_tree.ipynb`: Generate decision tree for clustering results of colonias with/without public water services
 
+## Visualize clustering results on Map
+Under the folder `maps/`, you can visualize clustering results on the map to understand the geographical distribution of water security in colonias.
+1. `maps/jsons`: this folder contains water security information with clustering labels and geographical locations for colonias with/without public water services.
+2. `maps/shapefiles`: this folder contains shapefiles of country boundaries and county outlines for 4 colonial states (Arizona, California, New Mexico, and Texas)
+
 
