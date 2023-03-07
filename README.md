@@ -2,6 +2,8 @@
 This is the source code for reproducing results shown in the Colonias paper
 
 ## Dataset
+Original datset is obtained from **Rural Community Assistance Partnership** (RCAP) on the GIS web platform named [Phase II Colonia Web Map ](https://crginc.maps.arcgis.com/apps/webappviewer/index.html?id=1d3a4eefcaee45519603e4aac90a223e).
+
 There are two sets of datasets (`colonias_N_norm.csv` and `colonias_Y_norm.csv`) as inputs of the workflow. `colonias_N_norm.csv` contains the water service information of colonias without public water services. `colonias_Y_norm.csv` contains the water service information of colonias with public water services. You can find them under the folder `dataset/`
 
 ## Code Usage
