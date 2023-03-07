@@ -2,9 +2,20 @@
 This is the source code for reproducing results shown in the Colonias paper
 
 ## Dataset
-Original datset is obtained from **Rural Community Assistance Partnership** (RCAP) on the GIS web platform named [Phase II Colonia Web Map ](https://crginc.maps.arcgis.com/apps/webappviewer/index.html?id=1d3a4eefcaee45519603e4aac90a223e). It also can be downloaded from the folder `dataset/Colonias.gdb `.
+Original dataset is obtained from **Rural Community Assistance Partnership** (RCAP) on the GIS web platform named [Phase II Colonia Web Map ](https://crginc.maps.arcgis.com/apps/webappviewer/index.html?id=1d3a4eefcaee45519603e4aac90a223e)
 
-There are two sets of datasets (`colonias_N_norm.csv` and `colonias_Y_norm.csv`) as inputs of the workflow. `colonias_N_norm.csv` contains the water service information of colonias without public water services. `colonias_Y_norm.csv` contains the water service information of colonias with public water services. You can find them under the folder `dataset/`
+1. `Colonias.gdb`: Oringal dataset from RCAP
+2. `colonias_Y_norm.csv`: preprocessed dataset for colonias with public water services from the original dataset (`Colonias.gdb`)
+3. `colonias_N_norm.csv`: preprocessed dataset for colonias without public water services from the original dataset (`Colonias.gdb`)
+4. `parameters_Y.csv`: clustering results (`Silhouette Score`) under different damping factors for colonias with public water services
+5. `parameters_N.csv`: clustering results (`Silhouette Score`) under different damping factors for colonias without public water services
+6. `colonias_Y_norm_labeled.csv`: `colonias_Y_norm.csv` attached with the optimal clustering labels for colonias with public water services
+7. `colonias_N_norm_labeled.csv`: `colonias_N_norm.csv` attached with the optimal clustering labels for colonias without public water services
+
+`colonias_N_norm.csv` and `colonias_Y_norm.csv` are inputs of Affinity Propagation algorithm.
+Selected attributes and corresponding descriptions are as follows:
+
+![image](https://user-images.githubusercontent.com/15030443/223287814-cd20de62-eddb-4217-96c2-40471e78aff2.png)
 
 ## Code Usage
 ### Dependencies
